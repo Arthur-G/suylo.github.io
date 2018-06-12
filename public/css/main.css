@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+    margin      : 0;
+    padding     : 0;
+    font-family : 'Verdana', sans-serif;
+    background  : url("../img/geometry_dash.png") repeat scroll;
+}
+
+header {
+    position        : relative;
+    z-index         : 999999;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+
+    color           : white;
+    background      : #6F9FD8;
+    background      : -webkit-linear-gradient(to right, #6F9FD8, #4e589b);
+    background      : linear-gradient(to right, #6F9FD8, #4e589b);
+    padding-bottom  : -10%;
+}
+
+header img {
+    margin             : 10% 4% 0 -4%;
+    border             : 2px solid transparent;
+    border-radius      : 50%;
+
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+}
+
+header img:hover {
+    cursor             : pointer;
+    border             : 2px solid white;
+
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+
+    -webkit-transform  : scale(1.2, 1.2);
+    -moz-transform     : scale(1.2, 1.2);
+    -ms-transform      : scale(1.2, 1.2);
+    -o-transform       : scale(1.2, 1.2);
+    transform          : scale(1.2 1.2);
+}
+
+header .aa_title {
+    text-align : center;
+    margin     : 0.12% 0 0.5% 2%;
+}
+
+header .aa_title h1 {
+    font-family : 'Permanent Marker', cursive;
+    font-size   : 75px;
+}
+header .aa_title p {
+    font-family : 'Roboto', sans-serif;
+}
+
+header .aa_social-media {
+    position       : absolute;
+    z-index        : 99999;
+    right          : 2%;
+    top            : 10%;
+
+    display        : flex;
+    flex-direction : row;
+}
+
+header .aa_social-media a {
+    margin             : 0 10px;
+    color              : white;
+    font-size          : 30px;
+
+    -webkit-transition : all 0.7s ease-in-out;
+    -moz-transition    : all 0.7s ease-in-out;
+    -o-transition      : all 0.7s ease-in-out;
+    transition         : all 0.7s ease-in-out;
+}
+
+header .aa_social-media a:hover {
+    color              : #46a6ff;
+
+    -webkit-transition : all 0.7s ease-in-out;
+    -moz-transition    : all 0.7s ease-in-out;
+    -o-transition      : all 0.7s ease-in-out;
+    transition         : all 0.7s ease-in-out;
+
+    -webkit-transform  : rotate(360deg);
+    -moz-transform     : rotate(360deg);
+    -ms-transform      : rotate(360deg);
+    -o-transform       : rotate(360deg);
+    transform          : rotate(360deg);
+}
+
+.aa_breaker {
+    position          : relative;
+    padding           : 3.5%;
+    margin-top        : -4%;
+
+    background        : #6F9FD8;
+    background        : -webkit-linear-gradient(to right, #6F9FD8, #4e589b);
+    background        : linear-gradient(to right, #6F9FD8, #4e589b);
+
+    -webkit-transform : skewY(-3deg);
+    -moz-transform    : skewY(-3deg);
+    -ms-transform     : skewY(-3deg);
+    -o-transform      : skewY(-3deg);
+    transform         : skewY(-3deg);
+}
+h2.aa_about {
+    color          : rgba(29, 30, 35, 0.87);
+    margin         : 10% 0 -5% 0;
+    text-align     : center;
+    text-transform : uppercase;
+}
+
+h2.aa_cmpt {
+    color          : rgba(29, 30, 35, 0.87);
+    margin         : 10% 0 5% 0;
+    text-align     : center;
+    text-transform : uppercase;
+}
+
+section.aa_about-me, section.aa_competences {
+    width       : 900px;
+    padding-top : 10%;
+    margin      : auto;
+    color       : gray;
+    text-align  : center;
+}
+
+
+.progress {
+    margin             : 10px 20px 30px 20px;
+    font-size          : 17px;
+
+    -webkit-transition : 0.7s;
+    -moz-transition    : 0.7s;
+    -o-transition      : 0.7s;
+    transition         : 0.7s;
+}
+
+.bg-success {
+    background : #2B81AF !important;
+}
+
+.aa_breaker-2 {
+    position          : relative;
+    z-index           : 100;
+    margin-top        : 10%;
+    margin-bottom     : -3.5%;
+    padding           : 4%;
+
+    background        : #6F9FD8;
+    background        : -webkit-linear-gradient(to left, #6F9FD8, #4e589b);
+    background        : linear-gradient(to left, #6F9FD8, #4e589b);
+
+    -webkit-transform : skewY(-3deg);
+    -moz-transform    : skewY(-3deg);
+    -ms-transform     : skewY(-3deg);
+    -o-transform      : skewY(-3deg);
+    transform         : skewY(-3deg);
+}
+
+.aa_portfolio-content h3 {
+    margin : 5% 0 7.5% 0;
+}
+
+.aa_portfolio-content h3 a{
+    color          : rgba(29, 30, 35, 0.87);
+
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+}
+
+.aa_portfolio-content h3 a:hover{
+    color: #66b9ff;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+}
+
+.aa_portfolio {
+    position   : relative;
+    z-index    : 99999;
+    background : #6F9FD8;
+    background : -webkit-linear-gradient(to left, #6F9FD8, #4e589b);
+    background : linear-gradient(to left, #6F9FD8, #4e589b);
+}
+
+.aa_portfolio-content {
+    position        : relative;
+    z-index         : 9999;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    margin          : auto;
+    width           : 95%;
+}
+
+.aa_my-works{
+    color: white;
+    margin-bottom: 5%;
+    text-align : center;
+    text-transform: uppercase;
+}
+
+.aa_portfolio-list {
+    margin             : 0 2%;
+    text-align         : center;
+
+    background         : #ADA996;
+    background         : -webkit-linear-gradient(to right, #EAEAEA, #faf8f7, #F2F2F2, #faf8f7);
+    background         : linear-gradient(to right, #EAEAEA, #faf8f7, #F2F2F2, #faf8f7);
+
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+}
+
+.aa_portfolio-list:hover {
+    transform          : translate3d(0, -10px, 0);
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+}
+
+.html5, .bootstrap, .css3, .php, .js {
+    color            : white;
+    border-radius    : 5px;
+    background-color : rgba(0, 46, 102, 0.69);
+    padding          : 2%;
+}
+.aa_litle{
+    font-size: 14px;
+}
+
+.aa_breaker-3 {
+    position          : relative;
+    z-index           : 100;
+    padding           : 4%;
+    margin-top        : -3.5%;
+
+    background        : #6F9FD8;
+    background        : -webkit-linear-gradient(to left, #6F9FD8, #4e589b);
+    background        : linear-gradient(to left, #6F9FD8, #4e589b);
+
+    -webkit-transform : skewY(-3deg);
+    -moz-transform    : skewY(-3deg);
+    -ms-transform     : skewY(-3deg);
+    -o-transform      : skewY(-3deg);
+    transform         : skewY(-3deg);
+}
+
+.aa_contact-me {
+    margin-top : 10%;
+    padding: 5%;
+}
