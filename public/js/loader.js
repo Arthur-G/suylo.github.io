@@ -8,14 +8,14 @@ $(document).ready(function() {
 
 
     sr.reveal('.foo-2', {
-        origin: 'top',
-        distance: '10em',
+        origin: 'left',
+        distance: '20em',
         duration: 1500
     });
 
     sr.reveal('.foo-3', {
-        origin: 'left',
-        distance: '5em',
+        origin: 'bottom',
+        distance: '10em',
         duration: 1500
     });
 
