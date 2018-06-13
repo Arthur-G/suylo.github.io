@@ -9,7 +9,7 @@ html, body {
 
 header {
     position        : relative;
-    z-index         : 999999;
+    z-index         : 10;
     display         : flex;
     flex-direction  : row;
     justify-content : center;
@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-    margin             : 10% 4% 0 -4%;
+    margin             : 20% 4% -2% -4%;
     border             : 2px solid transparent;
     border-radius      : 50%;
 
@@ -63,7 +63,7 @@ header .aa_title p {
 
 header .aa_social-media {
     position       : absolute;
-    z-index        : 99999;
+    z-index        : 10;
     right          : 2%;
     top            : 10%;
 
@@ -133,7 +133,41 @@ section.aa_about-me, section.aa_competences {
     color       : gray;
     text-align  : center;
 }
+section.aa_competences{
+    padding-top: 0;
+}
 
+.chart {
+    position           : relative;
+    display            : inline-block;
+    margin             : 20px 10px;
+    color              : gray;
+    font-size          : 20px;
+    text-align         : center;
+    -webkit-transition : all 0.2s ease-in-out;
+    -moz-transition    : all 0.2s ease-in-out;
+    -o-transition      : all 0.2s ease-in-out;
+    transition         : all 0.2s ease-in-out;
+}
+
+.chart:hover {
+    -webkit-transform  : scale(1.2, 1.2);
+    -moz-transform     : scale(1.2, 1.2);
+    -ms-transform      : scale(1.2, 1.2);
+    -o-transform       : scale(1.2, 1.2);
+    transform          : scale(1.2 1.2);
+
+    -webkit-transition : all 0.2s ease-in-out;
+    -moz-transition    : all 0.2s ease-in-out;
+    -o-transition      : all 0.2s ease-in-out;
+    transition         : all 0.2s ease-in-out;
+    cursor             : pointer;
+}
+.chart canvas {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+}
 
 .progress {
     margin             : 10px 20px 30px 20px;
@@ -151,7 +185,7 @@ section.aa_about-me, section.aa_competences {
 
 .aa_breaker-2 {
     position          : relative;
-    z-index           : 100;
+    z-index           : 5;
     margin-top        : 10%;
     margin-bottom     : -3.5%;
     padding           : 4%;
@@ -193,7 +227,7 @@ section.aa_about-me, section.aa_competences {
 
 .aa_portfolio {
     position   : relative;
-    z-index    : 99999;
+    z-index    : 10;
     background : #6F9FD8;
     background : -webkit-linear-gradient(to left, #6F9FD8, #4e589b);
     background : linear-gradient(to left, #6F9FD8, #4e589b);
@@ -201,7 +235,7 @@ section.aa_about-me, section.aa_competences {
 
 .aa_portfolio-content {
     position        : relative;
-    z-index         : 9999;
+    z-index         : 10;
     display         : flex;
     flex-direction  : row;
     justify-content : center;
@@ -250,7 +284,7 @@ section.aa_about-me, section.aa_competences {
 
 .aa_breaker-3 {
     position          : relative;
-    z-index           : 100;
+    z-index           : 5;
     padding           : 4%;
     margin-top        : -3.5%;
 

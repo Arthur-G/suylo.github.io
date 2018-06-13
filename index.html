@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
         <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="public/css/loader.css">
         <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
 
         <!-- FONTS -->
@@ -37,8 +38,15 @@
     </head>
     
     <body>
+        <div id="aa_loader-wrapper">
+            <div id="aa_loader"></div>
 
-    <header class="aa_font">
+            <div class="aa_loader-section section-left"></div>
+            <div class="aa_loader-section section-right"></div>
+
+        </div>
+
+        <header class="foo-1 aa_font">
             <div class="aa_logo">
                 <img src="public/img/favicon.png" alt="Logo" width="125">
             </div>
@@ -61,7 +69,7 @@
             </div>
         </header>
 
-        <div class="aa_breaker"></div>
+        <div class="foo-1 aa_breaker"></div>
 
         <h2 class="aa_about">à propos de moi</h2>
         <section class="aa_about-me">
@@ -72,109 +80,80 @@
             </p>
         </section>
 
-        <h2 class="aa_cmpt">Mes compétences</h2>
-        <section class="aa_competences">
+        <h2 class="aa_cmpt foo-2">Mes compétences</h2>
+        <section class="aa_competences row foo-2">
             <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <div class="progress" style="height: 40px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 79%"
-                                 aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"><span
-                                    class="_font up">HTML5
-                                    </span>
-                            </div>
-                        </div>
-
-                        <div class="progress" style="height: 40px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
-                                 aria-valuenow="70" aria-valuemin="0"
-                                 aria-valuemax="100"><span class="_font up">CSS3</span></div>
-                        </div>
-
-                        <div class="progress" style="height: 40px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%"
-                                 aria-valuenow="30" aria-valuemin="0"
-                                 aria-valuemax="100"><span class="_font up">Ruby
-                                    </span></div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="progress" style="height: 40px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%"
-                                 aria-valuenow="40" aria-valuemin="0"
-                                 aria-valuemax="100"><span class="_font up">PHP </span></div>
-                        </div>
-                        <div class="progress" style="height: 40px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 24%;"
-                                 aria-valuenow="24" aria-valuemin="0"
-                                 aria-valuemax="100"><span class="_font up">JS
-                                    </span></div>
-                        </div>
-                        <div class="progress" style="height: 40px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 20%"
-                                 aria-valuenow="20" aria-valuemin="0"
-                                 aria-valuemax="100"><span class="_font up">jQuery</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="chart" data-percent="72">HTML5</div>
+                <div class="chart" data-percent="69">CSS3</div>
+                <div class="chart" data-percent="25">SASS</div>
+                <div class="chart" data-percent="22">Ruby</div>
+                <div class="chart" data-percent="20">PHP</div>
+                <div class="chart" data-percent="15">JS</div>
             </div>
-
         </section>
 
-        <div class="aa_breaker-2"></div>
+        <section class="foo-3">
+            <div class="aa_breaker-2"></div>
 
-        <section class="aa_portfolio">
+            <section class="aa_portfolio ">
 
-            <h2 class="aa_my-works">Projet(s) réalisés </h2>
-            <section class="aa_portfolio-content">
-                <div class="aa_portfolio-list">
-                    <img src="public/img/sigmabio.png" width="325" />
-                    <h3><a href="http://laboratoire-sigmabio.fr" target="_blank">Sigmabio</a></h3>
-                    <p>
-                        <span class="html5">HTML5</span>
-                        <span class="css3">CSS3</span>
-                        <span class="bootstrap">BootStrap</span>
-                    </p>
-                </div>
-                <div class="aa_portfolio-list">
-                    <img src="public/img/dakeoz.png" width="325" />
-                    <h3><a href="https://github.com/AArobase/dakeoz-website">DaKeoZ</a>
-                        <span class="aa_litle">- Portfolio</span></h3>
-                    <p>
-                        <span class="html5">HTML5</span>
-                        <span class="css3">CSS3</span>
-                        <span class="bootstrap">BootStrap</span>
-                        <span class="php">PHP</span>
-                    </p>
-                    <p>
-                        <span class="js">JavaScript</span>
-                    </p>
+                <h2 class="aa_my-works">Projet(s) réalisés </h2>
+                <section class="aa_portfolio-content">
+                    <div class="aa_portfolio-list">
+                        <img src="public/img/sigmabio.png" width="325" />
+                        <h3><a href="http://laboratoire-sigmabio.fr" target="_blank">Sigmabio</a></h3>
+                        <p>
+                            <span class="html5">HTML5</span>
+                            <span class="css3">CSS3</span>
+                            <span class="bootstrap">BootStrap</span>
+                        </p>
+                    </div>
+                    <div class="aa_portfolio-list">
+                        <img src="public/img/dakeoz.png" width="325" />
+                        <h3><a href="https://github.com/AArobase/dakeoz-website">DaKeoZ</a>
+                            <span class="aa_litle">- Portfolio</span></h3>
+                        <p>
+                            <span class="html5">HTML5</span>
+                            <span class="css3">CSS3</span>
+                            <span class="bootstrap">BootStrap</span>
+                            <span class="php">PHP</span>
+                        </p>
+                        <p>
+                            <span class="js">JavaScript</span>
+                        </p>
 
-                </div>
-                <div class="aa_portfolio-list">
-                    <img src="public/img/soon.png" width="325" />
-                    <h3>Soon</h3>
-                    <p>
-                        <span class="html5">...</span>
-                        <span class="css3">...</span>
-                        <span class="bootstrap">...</span>
-                    </p>
-                </div>
+                    </div>
+                    <div class="aa_portfolio-list">
+                        <img src="public/img/soon.png" width="325" />
+                        <h3>Soon</h3>
+                        <p>
+                            <span class="html5">...</span>
+                            <span class="css3">...</span>
+                            <span class="bootstrap">...</span>
+                        </p>
+                    </div>
+                </section>
             </section>
+
+            <div class="aa_breaker-3"></div>
         </section>
 
-        <div class="aa_breaker-3"></div>
-
-
-        <section class="aa_contact-me" style="text-align: center;">
+        <section class="aa_contact-me foo-4" style="text-align: center;">
             <span class="aa_little">Website currently in development !</span>
         </section>
 
-        <footer class="aa_foot">
+        <footer class="aa_foot foo-5">
         </footer>
 
+
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"
+                integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM="
+                crossorigin="anonymous">
+        </script>
+        <script src="public/js/script.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="public/js/loader.js"></script>
+        <script src="public/js/easyPieChart.js"></script>
+        <script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
     </body>
 </html>
