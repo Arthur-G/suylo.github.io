@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/public/js/loader.js" libraries="{scrollreveal}" />
+    <file url="file://$PROJECT_DIR$/public/js/loader.js" libraries="{jquery-3.2.1.slim, scrollreveal}" />
     <file url="PROJECT" libraries="{jquery-2.1.3, jquery.easy-pie-chart}" />
   </component>
 </project>

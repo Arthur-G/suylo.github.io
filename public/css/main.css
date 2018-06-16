@@ -127,7 +127,7 @@ h2.aa_cmpt {
     text-transform : uppercase;
 }
 
-section.aa_about-me, section.aa_competences, section.aa_need-help {
+section.aa_about-me, section.aa_competences, section.aa_need-help, section.aa_contact {
     width       : 900px;
     padding-top : 10%;
     margin      : auto;
@@ -300,9 +300,9 @@ section.aa_competences{
     transform         : skewY(-3deg);
 }
 
-h2.aa_ndh {
+h2.aa_ndh, h2.aa_c {
     margin-top     : 10%;
-    margin-bottom: 5%;
+    margin-bottom  : 5%;
     text-align     : center;
     text-transform : uppercase;
 }
@@ -315,38 +315,44 @@ h2.aa_ndh {
 }
 
 h4 {
-    background : #6F9FD8;
-    padding    : 5% 10% 5% 10%;
-    overflow   : hidden;
-    color      : white;
-    font-size: 22px;
-    font-family: 'Verdana', sans-serif;
+    background  : #6F9FD8;
+    padding     : 5% 10% 5% 10%;
+    overflow    : hidden;
+    color       : white;
+    font-size   : 22px;
+    font-family : 'Verdana', sans-serif;
 }
+
 ol {
     list-style-type : none;
     margin          : 0;
-    padding: 5%;
+    padding         : 5%;
 }
-hr.aa_dashed-bar{
-    border: 1px dashed #6F9FD8;
+
+ol li{
+    margin-bottom: 5%;
 }
-p.aa_marge{
-    margin-top: 5%;
+
+hr.aa_dashed-bar {
+    border : 1px dashed #6F9FD8;
 }
+
+p.aa_marge {
+    margin-top : 5%;
+}
+
 p.aa_price {
     font-size   : 50px;
     font-family : 'Lobster', cursive;
 }
-ol li{
-    margin-bottom: 5%;
-}
+
 .aa_services {
-    border: 2px solid #6F9FD8;
-    border-radius    : 20px 0 20px 0;
-    background       : white;
-    text-align       : center;
-    margin           : 0 3%;
-    overflow-y       : hidden;
+    border             : 2px solid #6F9FD8;
+    border-radius      : 20px 0 20px 0;
+    background         : white;
+    text-align         : center;
+    margin             : 0 3%;
+    overflow-y         : hidden;
 
     -webkit-transition : all 0.3s ease-in-out;
     -moz-transition    : all 0.3s ease-in-out;
@@ -360,13 +366,13 @@ ol li{
     -o-transition      : all 0.3s ease-in-out;
     transition         : all 0.3s ease-in-out;
 
-    -webkit-transform : translate3d(0, -10px, 0);
-    -moz-transform    : translate3d(0, -10px, 0);
-    -ms-transform     : translate3d(0, -10px, 0);
-    -o-transform      : translate3d(0, -10px, 0);
-    transform         : translate3d(0, -10px, 0);
-    font-weight: normal;
-    cursor : pointer;
+    -webkit-transform  : translate3d(0, -10px, 0);
+    -moz-transform     : translate3d(0, -10px, 0);
+    -ms-transform      : translate3d(0, -10px, 0);
+    -o-transform       : translate3d(0, -10px, 0);
+    transform          : translate3d(0, -10px, 0);
+    font-weight        : normal;
+    cursor             : pointer;
 }
 
 a.aa_srv {
@@ -394,7 +400,82 @@ a.aa_srv:hover {
     transition         : all 0.3s ease-in-out;
 }
 
-.aa_contact-me {
-    margin-top : 10%;
-    padding    : 5%;
+.aa_redirect {
+    position : absolute;
+    z-index  : 10;
+    left     : 2%;
+    top      : 10%;
 }
+
+.aa_redirect a {
+    color              : white;
+    padding            : 5% 25% 5% 25%;
+    font-size          : 30px;
+    border-radius      : 50%;
+    -webkit-transition : all 0.3s ease-in-out;
+    -moz-transition    : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
+}
+
+.aa_redirect a:hover {
+    padding            : 5% 25% 5% 25%;
+    background-color   : white;
+    color              : #6F9FD8;
+    border-radius      : 50%;
+    -webkit-transition : all 0.3s ease-in-out;
+    -moz-transition    : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
+}
+
+section.aa_contact {
+    margin-top : -5%;
+}
+
+a.aa_goto {
+    color              : #2B81AF;
+    -webkit-transition : all 0.3s ease-in-out;
+    -moz-transition    : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
+}
+
+a.aa_goto:hover {
+    letter-spacing     : 1.4px;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease-in-out;
+    -moz-transition    : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
+}
+
+.aa_breaker-4{
+    position          : relative;
+    z-index           : 5;
+    padding           : 4%;
+    margin-top        : 10%;
+
+    background        : #6F9FD8;
+    background        : -webkit-linear-gradient(to right, #6F9FD8, #4e589b);
+    background        : linear-gradient(to right, #6F9FD8, #4e589b);
+
+    -webkit-transform : skewY(-3deg);
+    -moz-transform    : skewY(-3deg);
+    -ms-transform     : skewY(-3deg);
+    -o-transform      : skewY(-3deg);
+    transform         : skewY(-3deg);
+}
+
+.aa_foot {
+    position   : relative;
+    z-index    : 50;
+    padding    : 2.5%;
+    margin-top : -4.5%;
+    background : #6F9FD8;
+    background : -webkit-linear-gradient(to right, #6F9FD8, #4e589b);
+    background : linear-gradient(to right, #6F9FD8, #4e589b);
+}
+
+
+
