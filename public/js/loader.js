@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     sr.reveal('.aa_foo-top', {
         origin: 'top',
-        distance: '10em',
+        distance: '2em',
         duration: 1500
     });
 
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     sr.reveal('.aa_foo-right', {
        origin: 'right',
-        distance: '10em',
+        distance: '25px',
        duration: 1500
     });
 
