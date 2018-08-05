@@ -263,16 +263,15 @@ section.aa_competences{
 }
 
 .html5, .bootstrap, .css3, .php, .js {
-    color            : gray;
-    font-family: 'Montserrat', sans-serif;
-    padding          : 2%;
-    margin: 0 5px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid rgba(37,135,222,0.53);
-    font-size: 17px;
+    color         : #4e589b;
+    font-family   : 'Montserrat', sans-serif;
+    padding       : 2%;
+    margin        : 0 5px;
+    width         : 0;
+    height        : 0;
+    border        : 1px solid #4e589b;
+    border-radius : 3px;
+    font-size     : 17px;
 }
 
 
