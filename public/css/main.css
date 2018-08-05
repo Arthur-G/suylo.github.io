@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat|Ubuntu');
 
 html, body {
     margin      : 0;
     padding     : 0;
     font-family : 'Verdana', sans-serif;
-    background  : url("https://i0.wp.com/imagine-delta.com/wp-content/uploads/2017/11/Savin-NY-Website-Background-Web.jpg?ssl=1") no-repeat fixed center;
+    background  : whitesmoke;
 }
 
 header {
@@ -48,7 +48,9 @@ header img:hover {
     -o-transform       : scale(1.2, 1.2);
     transform          : scale(1.2 1.2);
 }
-
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 header .aa_title {
     text-align : center;
     margin     : 0.12% 0 0.5% 2%;
@@ -184,23 +186,7 @@ section.aa_competences{
     background : #2B81AF !important;
 }
 
-.aa_breaker-2 {
-    position          : relative;
-    z-index           : 5;
-    margin-top        : 10%;
-    margin-bottom     : -3.5%;
-    padding           : 4%;
 
-    background        : #6F9FD8;
-    background        : -webkit-linear-gradient(to left, #6F9FD8, #4e589b);
-    background        : linear-gradient(to left, #6F9FD8, #4e589b);
-
-    -webkit-transform : skewY(-3deg);
-    -moz-transform    : skewY(-3deg);
-    -ms-transform     : skewY(-3deg);
-    -o-transform      : skewY(-3deg);
-    transform         : skewY(-3deg);
-}
 
 .aa_portfolio-content h3 {
     margin : 5% 0 7.5% 0;
@@ -229,9 +215,12 @@ section.aa_competences{
 .aa_portfolio {
     position   : relative;
     z-index    : 10;
-    background : #6F9FD8;
-    background : -webkit-linear-gradient(to left, #6F9FD8, #4e589b);
-    background : linear-gradient(to left, #6F9FD8, #4e589b);
+    background        : #6F9FD8;
+    background        : -webkit-linear-gradient(to right, #6F9FD8, #4e589b);
+    background        : linear-gradient(to right, #6F9FD8, #4e589b);
+    padding: 3%;
+    margin: 15% 0 5% 0;
+
 }
 
 .aa_portfolio-content {
@@ -246,9 +235,9 @@ section.aa_competences{
 
 .aa_my-works{
     color: white;
-    margin-bottom: 5%;
     text-align : center;
     text-transform: uppercase;
+    margin: 2% 0 5% 0;
 }
 
 .aa_portfolio-list {
@@ -274,31 +263,23 @@ section.aa_competences{
 }
 
 .html5, .bootstrap, .css3, .php, .js {
-    color            : white;
-    border-radius    : 5px;
-    background-color : rgba(0, 46, 102, 0.69);
+    color            : gray;
+    font-family: 'Montserrat', sans-serif;
     padding          : 2%;
+    margin: 0 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(37,135,222,0.53);
+    font-size: 17px;
 }
+
+
 .aa_litle{
     font-size: 14px;
 }
 
-.aa_breaker-3 {
-    position          : relative;
-    z-index           : 5;
-    padding           : 4%;
-    margin-top        : -3.5%;
-
-    background        : #6F9FD8;
-    background        : -webkit-linear-gradient(to left, #6F9FD8, #4e589b);
-    background        : linear-gradient(to left, #6F9FD8, #4e589b);
-
-    -webkit-transform : skewY(-3deg);
-    -moz-transform    : skewY(-3deg);
-    -ms-transform     : skewY(-3deg);
-    -o-transform      : skewY(-3deg);
-    transform         : skewY(-3deg);
-}
 
 h2.aa_ndh, h2.aa_c {
     margin-top     : 10%;
@@ -476,6 +457,5 @@ a.aa_goto:hover {
     background : -webkit-linear-gradient(to right, #6F9FD8, #4e589b);
     background : linear-gradient(to right, #6F9FD8, #4e589b);
 }
-
 
 
