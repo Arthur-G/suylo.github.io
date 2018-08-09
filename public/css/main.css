@@ -5,12 +5,13 @@ html, body {
     margin      : 0;
     padding     : 0;
     font-family : 'Verdana', sans-serif;
-    background  : whitesmoke;
+    background  : url("../img/bck.png") repeat;
 }
 
 header {
     position        : relative;
     z-index         : 10;
+
     display         : flex;
     flex-direction  : row;
     justify-content : center;
@@ -36,6 +37,8 @@ header img {
 header img:hover {
     cursor             : pointer;
     border             : 2px solid white;
+    border-radius      : 25%;
+
 
     -webkit-transition : all 0.3s;
     -moz-transition    : all 0.3s;
@@ -48,9 +51,8 @@ header img:hover {
     -o-transform       : scale(1.2, 1.2);
     transform          : scale(1.2 1.2);
 }
-p{
-    font-family: 'Montserrat', sans-serif;
-}
+
+
 header .aa_title {
     text-align : center;
     margin     : 0.12% 0 0.5% 2%;
@@ -60,6 +62,7 @@ header .aa_title h1 {
     font-family : 'Permanent Marker', cursive;
     font-size   : 75px;
 }
+
 header .aa_title p {
     font-family : 'Roboto', sans-serif;
 }
@@ -115,9 +118,11 @@ header .aa_social-media a:hover {
     -o-transform      : skewY(-3deg);
     transform         : skewY(-3deg);
 }
+
 h2.aa_about {
     color          : rgba(29, 30, 35, 0.87);
     margin         : 10% 0 -5% 0;
+
     text-align     : center;
     text-transform : uppercase;
 }
@@ -125,6 +130,7 @@ h2.aa_about {
 h2.aa_cmpt {
     color          : rgba(29, 30, 35, 0.87);
     margin         : 10% 0 5% 0;
+
     text-align     : center;
     text-transform : uppercase;
 }
@@ -136,8 +142,9 @@ section.aa_about-me, section.aa_competences, section.aa_need-help, section.aa_co
     color       : gray;
     text-align  : center;
 }
-section.aa_competences{
-    padding-top: 0;
+
+section.aa_competences {
+    padding-top : 0;
 }
 
 .chart {
@@ -145,8 +152,10 @@ section.aa_competences{
     display            : inline-block;
     margin             : 20px 10px;
     color              : gray;
+
     font-size          : 20px;
     text-align         : center;
+
     -webkit-transition : all 0.2s ease-in-out;
     -moz-transition    : all 0.2s ease-in-out;
     -o-transition      : all 0.2s ease-in-out;
@@ -166,6 +175,7 @@ section.aa_competences{
     transition         : all 0.2s ease-in-out;
     cursor             : pointer;
 }
+
 .chart canvas {
     position : absolute;
     top      : 0;
@@ -186,8 +196,6 @@ section.aa_competences{
     background : #2B81AF !important;
 }
 
-
-
 .aa_portfolio-content h3 {
     margin : 5% 0 7.5% 0;
 }
@@ -201,16 +209,6 @@ section.aa_competences{
     transition         : all 0.3s;
 }
 
-.aa_portfolio-content h3 a:hover{
-    color: #66b9ff;
-    letter-spacing: 1.4px;
-    text-decoration: none;
-
-    -webkit-transition : all 0.3s;
-    -moz-transition    : all 0.3s;
-    -o-transition      : all 0.3s;
-    transition         : all 0.3s;
-}
 
 .aa_portfolio {
     position   : relative;
@@ -223,6 +221,13 @@ section.aa_competences{
 
 }
 
+.aa_my-works{
+    color: white;
+    text-align : center;
+    text-transform: uppercase;
+    margin: 2% 0 5% 0;
+}
+
 .aa_portfolio-content {
     position        : relative;
     z-index         : 10;
@@ -233,16 +238,10 @@ section.aa_competences{
     width           : 95%;
 }
 
-.aa_my-works{
-    color: white;
-    text-align : center;
-    text-transform: uppercase;
-    margin: 2% 0 5% 0;
-}
-
 .aa_portfolio-list {
     margin             : 0 2%;
     text-align         : center;
+    overflow           : hidden;
 
     background         : #ADA996;
     background         : -webkit-linear-gradient(to right, #EAEAEA, #faf8f7, #F2F2F2, #faf8f7);
@@ -254,29 +253,40 @@ section.aa_competences{
     transition         : all 0.3s;
 }
 
-.aa_portfolio-list:hover {
-    transform          : translate3d(0, -10px, 0);
+.aa_portfolio-list a img{
+    -webkit-transition : all 0.2s;
+    -moz-transition    : all 0.2s;
+    -o-transition      : all 0.2s;
+    transition         : all 0.2s;
+}
+
+.aa_portfolio-list a img:hover {
+    opacity            : 0.8;
     -webkit-transition : all 0.3s;
     -moz-transition    : all 0.3s;
     -o-transition      : all 0.3s;
     transition         : all 0.3s;
+    -webkit-transform  : scale(1.1, 1.1) translate3d(0, -10px, 0);
+    -moz-transform     : scale(1.1, 1.1) translate3d(0, -10px, 0);
+    -ms-transform      : scale(1.1, 1.1) translate3d(0, -10px, 0);
+    -o-transform       : scale(1.1, 1.1) translate3d(0, -10px, 0);
+    transform          : scale(1.1, 1.1) translate3d(0, -10px, 0);
+}
+
+.aa_litle{
+    font-size: 14px;
 }
 
 .html5, .bootstrap, .css3, .php, .js {
     color         : #4e589b;
     font-family   : 'Montserrat', sans-serif;
-    padding       : 2%;
+    padding       : 1%;
     margin        : 0 5px;
     width         : 0;
     height        : 0;
     border        : 1px solid #4e589b;
     border-radius : 3px;
     font-size     : 17px;
-}
-
-
-.aa_litle{
-    font-size: 14px;
 }
 
 
@@ -457,4 +467,6 @@ a.aa_goto:hover {
     background : linear-gradient(to right, #6F9FD8, #4e589b);
 }
 
-
+p{
+    font-family: 'Montserrat', sans-serif;
+}

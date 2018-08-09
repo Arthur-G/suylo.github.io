@@ -7,10 +7,8 @@ $(document).ready(function() {
     window.sr = ScrollReveal({ reset: false });
 
 
-    sr.reveal('.aa_foo-2', {
-        origin: 'left',
-        distance: '50em',
-        duration: 1500
+    sr.reveal('.aa_foo', {
+        duration: 1500,
     });
 
     sr.reveal('.aa_foo-top', {
@@ -20,15 +18,15 @@ $(document).ready(function() {
     });
 
     sr.reveal('.aa_foo-left', {
-        origin: 'left',
-        distance: '20em',
+        origin: 'right',
+        distance: '1px',
         duration: 1500
     });
 
     sr.reveal('.aa_foo-right', {
-       origin: 'right',
+        origin: 'right',
         distance: '25px',
-       duration: 1500
+        duration: 1500
     });
 
     sr.reveal('.aa_foo-bottom', {

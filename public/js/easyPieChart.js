@@ -4,7 +4,7 @@ $(function() {
         lineWidth: 20,
         lineCap: 'round',
         barColor: '#6F9FD8',
-        trackColor:	"#ecf0f1",
+        trackColor:	"whitesmoke",
         size: 160,
         animate: 500
     });
