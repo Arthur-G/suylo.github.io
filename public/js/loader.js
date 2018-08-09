@@ -35,6 +35,24 @@ $(document).ready(function() {
         duration: 1500
     });
 
+    sr.reveal('.aa_foo-bottom2', {
+        origin: 'bottom',
+        distance: '50em',
+        duration: 1000
+    });
+
+    sr.reveal('.aa_foo-bottom3', {
+        origin: 'bottom',
+        distance: '50em',
+        duration: 1500
+    });
+
+    sr.reveal('.aa_foo-bottom4', {
+        origin: 'bottom',
+        distance: '50em',
+        duration: 2000
+    });
+
 });
 
 $(document).ready(function(){

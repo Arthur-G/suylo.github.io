@@ -58,4 +58,9 @@
         margin: 0;
         padding: 0;
     }
+    .aa_contact p, p.resp, .aa_about-me p{
+        max-width : 87%;
+        text-align: justify;
+        margin: auto;
+    }
 }
