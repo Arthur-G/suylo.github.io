@@ -19,7 +19,6 @@ $(document).ready(function() {
 
     sr.reveal('.aa_foo-left', {
         origin: 'right',
-        distance: '1px',
         duration: 1500
     });
 
