@@ -142,6 +142,9 @@ section.aa_about-me, section.aa_competences, section.aa_need-help, section.aa_co
     color       : gray;
     text-align  : center;
 }
+section.aa_need-help{
+    padding-top: 2%;
+}
 
 section.aa_competences {
     padding-top : 0;
@@ -211,14 +214,12 @@ section.aa_competences {
 
 
 .aa_portfolio {
-    position   : relative;
     z-index    : 10;
     background        : #6F9FD8;
     background        : -webkit-linear-gradient(to right, #6F9FD8, #4e589b);
     background        : linear-gradient(to right, #6F9FD8, #4e589b);
     padding: 3%;
     margin: 15% 0 5% 0;
-
 }
 
 .aa_my-works{

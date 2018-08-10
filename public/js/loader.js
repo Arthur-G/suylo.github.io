@@ -36,22 +36,38 @@ $(document).ready(function() {
 
     sr.reveal('.aa_foo-bottom2', {
         origin: 'bottom',
-        distance: '50em',
+        distance: '30em',
         duration: 1000
     });
 
     sr.reveal('.aa_foo-bottom3', {
         origin: 'bottom',
-        distance: '50em',
+        distance: '30em',
         duration: 1500
     });
 
     sr.reveal('.aa_foo-bottom4', {
         origin: 'bottom',
-        distance: '50em',
+        distance: '30em',
         duration: 2000
     });
+    sr.reveal('.aa_foo-top2', {
+        origin: 'top',
+        distance: '5em',
+        duration: 1000
+    });
 
+    sr.reveal('.aa_foo-top3', {
+        origin: 'top',
+        distance: '5em',
+        duration: 1500
+    });
+
+    sr.reveal('.aa_foo-top4', {
+        origin: 'top',
+        distance: '5em',
+        duration: 2000
+    });
 });
 
 $(document).ready(function(){
