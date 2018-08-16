@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #262626;
+    color: white;
+    padding: 0.5%;
+
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header .title-ip h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+header .title-ip p.btn-ip {
+    text-align: center;
+    background: #434343;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+header .things p.conncted{
+}
+header .things p.vote{
+    text-align: center;
+
+}
+header .things p.vote a {
+    background: #3a7b7b;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+}
+header .things p.vote a:hover{
+    letter-spacing: 1.4px;
+    color: lightgray;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul#menu{
+    margin: 0;
+    overflow: hidden;
+    padding: 30px;
+    background: whitesmoke;
+    list-style-type: none;
+}
+nav ul#menu li{
+    display: inline-block;
+    border-right: 1px solid lightgray;
+}
+nav ul#menu li.left{
+    margin-left: 8%;
+}
+nav ul#menu li a{
+    color: gray;
+    padding: 25px 20px;
+    font-family: 'Verdana', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 7px solid transparent;
+
+}
+nav ul#menu li a.active{
+    color: white;
+    background: #4c2c7b;
+    padding: 35px 20px;
+}
+nav ul#menu li a.click:hover {
+    color: #4c2c7b;
+    transition: all 0.4s ease-in-out;
+}
+
+section.image-banner{
+    background: url("https://herezy.fr/theme/bloodsymphony/img/homepage-banner-lossy.jpg") scroll no-repeat;
+    padding: 18.6%;
+}
+
+#skwdbar{
+    position: relative;
+    padding: 6%;
+    -webkit-transform: skewY(-6deg);
+    -moz-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    -o-transform: skewY(-6deg);
+    transform: skewY(-6deg);
+    background: white;
+    margin-top: -6%;
+    backface-visibility: hidden;
+    z-index: 2;
+}
+
+section.foundedbye{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 2%;
+    max-width: 60%;
+    margin: -5% auto 0 auto;
+    background: whitesmoke;
+    color: gray;
+    border-radius:5px;
+    border: 2px solid lightgray;
+    font-weight: 100;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+#skwdbar2{
+    position: relative;
+    background: white;
+    padding: 10%;
+    margin-top: -18%;
+    margin-bottom: 10%;
+    transform: skewY(-6deg);
+}
+
+
+section.partenaires{
+    max-width: 80%;
+    margin: auto;
+}
+section.partenaires .host-staff{
+    margin: 8.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section.partenaires .host-staff .host, .staff{
+    background: whitesmoke;
+    color: darkgray;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    transition: all 0.4s ease-in-out;
+
+}
+section.partenaires .host-staff .host:hover, .staff:hover {
+    color: #4c2c7b;
+    transition: all 0.4s ease-in-out;
+
+}
+p.big{
+    font-size: 25px;
+
+    margin: 0;
+    color: darkgray;
+}
+.host{
+    margin-right: 10%;
+}
+.host p i, .staff p i{
+    font-size: 75px;
+    margin-right: 20px;
+}
+p.text{
+    color: gray;
+}
+
+footer{
+    background: #333333;
+    border-top: 5px solid #4c2c7b;
+    color: white;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer p{
+    padding: 5px;
+}
+
+footer .title-text h1{
+    margin: 0;
+    padding: 2px;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+p.border-bottom{
+    border-bottom: 1px solid #454545;
+    width: 130%;
+}
+.darkgray{
+    color: #545454;
+}
+i.gray{
+    color:#585858;
+    margin-right: 15px;
+}
+footer .utils-links h2{
+    color: gray;
+    border-bottom: 3px solid gray;
+    width: 10%;
+}
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #4c2c7b;
+    color: white;
+    padding: 1.5%;
+}
+aside .copy{
+    margin-left: 8%;
+}
+aside .coded{
+    margin-right: 8%;
+}
+aside .mdr{
+    text-decoration: underline;
+}

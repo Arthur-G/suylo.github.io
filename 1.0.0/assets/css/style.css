@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web|Ubuntu');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Verdana', sans-serif;
+}
+
+header{
+    box-shadow: 2px 2px 5px gray;
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F37335, #FDC830);
+    // background: linear-gradient(to left, #F37335, #FDC830);
+
+}
+header img{
+    top: 10px;
+    left: 20px;
+
+    border-radius: 20%;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header img:hover{
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+header nav ul{
+    position: relative;
+    list-style-type: none;
+    color: lightgray;
+    padding: 25px;
+    margin: 0;
+    overflow: hidden;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 20px 25px 30px 25px;
+    transition: all 0.3s ease-in-out;
+    border-top: 5px solid transparent;
+
+}
+header nav ul li a:hover{
+    transition: all 0.3s ease-in-out;
+    color: white;
+    border-top: 8px solid white;
+}
+header nav ul li a.actived {
+    border-top: 8px solid white;
+}
+header nav ul li a.space{
+    background-color: orange;
+}
+.background {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    transition: opacity 500ms;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.background:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    z-index: 9999;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.content a{
+    text-align: center;
+    color:  dodgerblue;
+    text-decoration: none;
+}
+.content p{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.formulaires{
+    display: flex;
+    flex-direction: column;
+}
+.popup .close:hover {
+    color: rgba(72,72,72,0.99);
+}
+.popup .content {
+    max-height: 50%;
+    overflow: auto;
+}
+.content{
+}
+
+.sep{
+    border: 1px solid #373736;
+    width: 10%;
+}
+
+#pseudo, #email, #passwd{
+    border: none;
+    background: whitesmoke;
+    padding: 2%;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    border-bottom: 3px solid gray;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+.text{
+    margin: 10% auto;
+    max-width: 60%;
+}
+#submit{
+    padding: 6px;
+    width: 30%;
+    margin: 10px auto;
+    border: none;
+    background: #38d257;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+#submit:hover{
+    cursor: pointer;
+    background: #2da646;
+}
+.text{
+    text-align: justify;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Front-end training</title>
+        
+        <!--  OPEN GRAPH -->
+        <meta property="og:title" content="Front-end training">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Frontend training : 1.1.5, youpi!!!">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:url" content="https://suylo.github.io/1.1.5">
+        <meta property="og:site_name" content="suylo.github.io/1.1.5">
+	    <meta property="og:image" content="https://suylo.github.io/1.1.5/public/img/favicon.jpg">
+	    <meta property="og:image:secure_url" content="https://suylo.github.io/1.1.5/public/img/favicon.jpg">
+
+	    <meta name="theme-color" content="#1b752f">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1b752f">
+        <meta name="msapplication-navbutton-color" content="#1b752f">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="shortcut icon" href="public/img/favicon.jpg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill|Montserrat" rel="stylesheet">
+        <!-- FONTS -->
+    </head>
+    
+    <body>
+
+        <div class="preLoader">
+            <span class="spin"></span>
+        </div>
+
+        <header>
+            <div class="left">
+                <div class="logo">
+                    <img src="public/img/favicon.jpg" width="75" alt="#">
+                </div>
+                <h1>Suylo</h1>
+            </div>
+
+
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a class="active" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">A propos de</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Mes Services</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="text">
+            <a href="discord.gg"><button id="join_me" type="button">
+                Discord
+            </button></a>
+        </section>
+
+        <script src="public/js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(window).on('load', function(){
+
+                function removePreloader() {
+                    var preLoader = $('.preLoader');
+                    preLoader.fadeOut();
+                }
+                setTimeout(removePreloader, 1550);
+            });
+        </script>
+     </body>
+</html>
