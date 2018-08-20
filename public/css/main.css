@@ -201,6 +201,8 @@ section.aa_competences {
 
 .aa_portfolio-content h3 {
     margin : 5% 0 7.5% 0;
+    position: relative;
+    z-index : 999;
 }
 
 .aa_portfolio-content h3 a{
@@ -273,6 +275,9 @@ section.aa_competences {
     -ms-transform      : scale(1.1, 1.1) translate3d(0, -10px, 0) rotate(-1deg);
     -o-transform       : scale(1.1, 1.1) translate3d(0, -10px, 0) rotate(-1deg);
     transform          : scale(1.1, 1.1) translate3d(0, -10px, 0) rotate(-1deg);
+    -webkit-backface-visibility : hidden;
+    -moz-backface-visibility    : hidden;
+    backface-visibility         : hidden;
 }
 
 .aa_litle{
