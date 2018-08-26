@@ -79,10 +79,7 @@ nav ul#menu li.dropdown {
     position: absolute;
     display: none;
     width: 135px;
-
-    background: rgb(202, 32, 31);
-    background: -webkit-linear-gradient(to right, rgb(202, 32, 31), rgb(207, 34, 32));
-    background: linear-gradient(to right, rgb(202, 32, 31), rgb(207, 34, 32));
+    background-color: #c40018;
 
     text-align: center;
     z-index: 1;
@@ -101,3 +98,4 @@ div.drop a {
 .dropdown:hover .drop {
     display : block;
 }
+

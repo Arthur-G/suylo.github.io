@@ -59,10 +59,7 @@ html, body {
  */
 
 header {
-    background: #e52d27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #c40018;
     color           : white;
 
     display         : flex;
@@ -101,7 +98,7 @@ header {
 
 section.titre {
     position    : relative;
-    background  : rgb(179, 18, 23);
+    background  : #9f090f;
     color       : white;
 
     padding     : 10% 0;
@@ -135,11 +132,11 @@ section#infos {
     text-align      : center;
 
     max-width       : 80%;
-    margin          : 7% auto;
+    margin          : 7.5% auto;
 }
 
 section#infos .avantages {
-    color      : #b31217;
+    color      : #e9290f;
     width      : 40%;
     margin     : 0 30px;
     padding    : 5% 1.5%;
@@ -176,7 +173,7 @@ section#utils {
     align-items      : center;
     justify-content  : space-around;
 
-    background-color : #6e0f0f;
+    background-color : #292725;
     padding          : 1%;
 }
 
@@ -238,7 +235,7 @@ footer {
     justify-content  : space-between;
 
     color            : white;
-    background-color : #6e0f0f;
+    background-color : #292725;
     padding          : 0.5%;
 }
 
@@ -281,6 +278,7 @@ section.items-list {
     max-width       : 80%;
     margin          : auto;
 }
+
 
 section.items-list .card-large, .card-small, .card-medium {
     border             : 1px solid rgba(0, 0, 0, .2);
@@ -413,8 +411,8 @@ img.rotate:hover{
 }
 
 #content-of-page p.attention {
-    color       : white;
-    background  : rgba(255, 255, 255, 0.2);
+    color       : transparent;
+    background: transparent;
     font-family : 'Montserrat', sans-serif;
     width       : 100%;
 }
@@ -423,7 +421,7 @@ img.rotate:hover{
     position         : fixed;
     width            : 100%;
     height           : 100%;
-    background-color : #9f090f;
+    background-color : #292725;
 }
 
 .container {
@@ -431,7 +429,8 @@ img.rotate:hover{
     max-width     : 50%;
     border-radius : 5px;
 
-    margin-top    : 7.5%;
+    margin-top: 7.5%;
+    margin-bottom: 3%;
     padding       : 1%;
 }
 
@@ -474,6 +473,7 @@ hr.sep-2 {
     background-color : whitesmoke;
     color            : #b31217;
     border           : 1px solid #b31217;
+    cursor: url("../img/favicon2.png") default;
 }
 
 p.connect {

@@ -4,5 +4,5 @@ $(window).on('load', function(){
         var preLoader = $('.fidget');
         preLoader.fadeOut();
     }
-    setTimeout(removePreloader, 1550);
+    setTimeout(removePreloader, 700);
 });
