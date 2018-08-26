@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Roboto|Raleway|Montserrat');
+
+html, body {
+    margin           : 0;
+    padding          : 0;
+    background-color : white;
+}
+
+.fidget {
+    position   : fixed;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 100%;
+    background : #9f090f;
+    z-index    : 99999;
+    overflow   : hidden;
+}
+
+.hand_spinner {
+    -webkit-animation : spin 2s linear infinite;
+    animation         : spin 1s linear infinite;
+    width             : 70px;
+    height            : 70px;
+    position          : absolute;
+    border-top        : 5px solid white;
+    border-bottom     : 5px solid white;
+    border-radius     : 90%;
+    left              : 0;
+    right             : 0;
+    top               : 0;
+    bottom            : 0;
+    margin            : auto;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform : rotate(0deg);
+        transform         : rotate(0deg);
+    }
+    100% {
+        -webkit-transform : rotate(360deg);
+        transform         : rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform : rotate(0deg);
+        transform         : rotate(0deg);
+    }
+    100% {
+        -webkit-transform : rotate(360deg);
+        transform         : rotate(360deg);
+    }
+}
+
+/*
+    HEADER
+ */
+
+header {
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color           : white;
+
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-around;
+    align-items     : center;
+
+    position        : fixed;
+    width           : 100%;
+    height          : 75px;
+    top             : 0;
+    z-index         : 50;
+}
+
+.logo {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+}
+
+
+.logo h1, .logo h4{
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-left: 10px;
+    color: white;
+    margin-bottom : 0;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+/*
+
+    Page d'accueil
+
+ */
+
+section.titre {
+    position    : relative;
+    background  : rgb(179, 18, 23);
+    color       : white;
+
+    padding     : 10% 0;
+    text-align  : center;
+    font-family : 'Roboto', sans-serif;
+    z-index     : 9;
+}
+
+section.titre h1 {
+    margin-top  : 2.5%;
+    font-family : 'Do Hyeon', sans-serif;
+    font-size   : 65px;
+    font-weight : bold;
+}
+
+section.titre p {
+    text-transform : uppercase;
+    font-size      : 18px;
+}
+
+/*
+
+    Infos, sécurité, perfs
+
+ */
+
+section#infos {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    text-align      : center;
+
+    max-width       : 80%;
+    margin          : 7% auto;
+}
+
+section#infos .avantages {
+    color      : #b31217;
+    width      : 40%;
+    margin     : 0 30px;
+    padding    : 5% 1.5%;
+    text-align : center;
+}
+
+section#infos .avantages i {
+    font-size      : 50px;
+    padding-bottom : 4px;
+}
+
+section#infos .avantages hr.little-sep {
+    width  : 60px;
+    border : 1px solid #e52d27;
+}
+
+section#infos .avantages p {
+    color       : gray;
+    font-family : 'Montserrat', sans-serif;
+    width       : 175px;
+    margin      : auto;
+    padding-top : 2%;
+}
+
+/*
+
+    FOOTER 0.5, Réseaux sociaux, liens utiles, partenaires
+
+*/
+
+section#utils {
+    display          : flex;
+    flex-direction   : row;
+    align-items      : center;
+    justify-content  : space-around;
+
+    background-color : #6e0f0f;
+    padding          : 1%;
+}
+
+section#utils .utils-left p, .utils-center p {
+    color         : lightgray;
+    margin-top    : 3%;
+    margin-bottom : 0;
+}
+
+section#utils a {
+    color       : white;
+    font-family : 'Montserrat', sans-serif;
+
+    text-decoration: none;
+}
+
+section#utils a:after {
+    content    : '';
+    display    : block;
+    width      : 0;
+    height     : 1px;
+    background : white;
+    transition : width .3s;
+}
+
+section#utils a:hover:after {
+    width           : 100%;
+    transition      : width .5s;
+    text-decoration : none;
+}
+
+section#utils .social h2, .partners h2 {
+    color          : white;
+    font-family    : 'Roboto', sans-serif;
+    font-size      : 25px;
+    text-transform : uppercase;
+
+    border-left    : 6px solid lightgray;
+    margin-bottom  : 8%;
+    padding-left   : 5px;
+}
+
+
+section#utils .utils-right p, .utils-center p {
+    margin-top    : 3%;
+    margin-bottom : 0;
+}
+
+/*
+
+    FOOTER, copyrights & maded by
+
+ */
+
+footer {
+    display          : flex;
+    flex-direction   : row;
+    align-items      : center;
+    justify-content  : space-between;
+
+    color            : white;
+    background-color : #6e0f0f;
+    padding          : 0.5%;
+}
+
+footer .footer-left {
+    margin-left : 5%;
+}
+
+footer .footer-right {
+    margin-right : 5%;
+}
+
+/*
+
+    Minecraft, CS, Gmod - NosOfrres
+
+*/
+
+section#nos-offres {
+    color            : white;
+    background-color : #9f090f;
+    padding          : 5% 0;
+}
+
+section#nos-offres h2 {
+    margin-top  : 5%;
+    font-family : 'Roboto', sans-serif;
+}
+
+/* 
+    les 3 panneaux pour les commandes
+*/
+
+section.items-list {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : center;
+    text-align      : center;
+
+    max-width       : 80%;
+    margin          : auto;
+}
+
+section.items-list .card-large, .card-small, .card-medium {
+    border             : 1px solid rgba(0, 0, 0, .2);
+    border-radius      : 5px;
+    margin             : 5% 1.5%;
+    padding            : 2%;
+    
+    -webkit-transition : all .3s ease-in-out;
+    -moz-transition    : all .3s ease-in-out;
+    -o-transition      : all .3s ease-in-out;
+    transition         : all .3s ease-in-out;
+}
+
+.card-medium{
+    -webkit-transform : scale(1.1, 1.1);
+    -moz-transform    : scale(1.1, 1.1);
+    -ms-transform     : scale(1.1, 1.1);
+    -o-transform      : scale(1.1, 1.1);
+    transform         : scale(1.1, 1.1);
+}
+
+.card-large:hover, .card-small:hover, .card-medium:hover {
+    box-shadow         : 0 0 10px 0 rgba(0, 0, 0, .2);
+    -webkit-transform  : scale(1.1, 1.1);
+    -moz-transform     : scale(1.1, 1.1);
+    -ms-transform      : scale(1.1, 1.1);
+    -o-transform       : scale(1.1, 1.1);
+    transform          : scale(1.1, 1.1);
+
+    -webkit-transition : all .3s ease-in-out;
+    -moz-transition    : all .3s ease-in-out;
+    -o-transition      : all .3s ease-in-out;
+    transition         : all .3s ease-in-out;
+}
+
+section.items-list hr.small {
+    width  : 20%;
+    border : 1px solid #6e0f0f;
+}
+
+section.items-list p.price {
+    color       : #9f090f;
+    font-family : 'Montserrat', sans-serif;
+    font-size   : 35px;
+    font-weight : bold;
+}
+
+section.items-list p.price span.little {
+    color       : #444;
+    padding-top : 5%;
+    font-size   : 17px;
+    font-weight : normal;
+}
+
+.card-large h4, .card-small h4, .card-medium h4{
+    color       : #444;
+    font-family : 'Roboto', sans-serif;
+    font-size   : 20px;
+}
+
+p.content {
+    color       : #999;
+    font-family : 'Roboto', sans-serif;
+    font-size   : 15px;
+    font-weight : lighter;
+}
+
+a.submit-a {
+    padding          : 2.5%;
+    background-color : #9f090f;
+    color            : white;
+    border           : 1px solid transparent;
+    border-radius    : 25px;
+}
+
+a.submit-a:hover {
+    color            : #9f090f;
+    background-color : whitesmoke;
+    border           : 1px solid #9f090f;
+    text-decoration  : none;
+}
+
+
+/*
+
+    others...
+
+*/
+
+i.fa-heart{
+    color: #e52d27;
+}
+
+.margin-top {
+    margin-top : 5%;
+}
+
+.centered {
+    justify-content : center;
+}
+
+.dohyeon{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+._{
+    margin-bottom: -1.5%;
+    margin-top: 2%;
+}
+img.rotate{
+    transition: all .3s ease-in-out;
+
+}
+img.rotate:hover{
+    transform: rotate(360deg);
+    cursor : pointer;
+    transition: all .5s ease-in-out;
+}
+
+/*
+
+    ESPACE CLIENTS - Connexion, Inscription
+
+*/
+
+#content-of-page {
+    position : relative;
+}
+
+#content-of-page p.attention {
+    color       : white;
+    background  : rgba(255, 255, 255, 0.2);
+    font-family : 'Montserrat', sans-serif;
+    width       : 100%;
+}
+
+#particles-js {
+    position         : fixed;
+    width            : 100%;
+    height           : 100%;
+    background-color : #9f090f;
+}
+
+.container {
+    background    : #e3e4e3;
+    max-width     : 50%;
+    border-radius : 5px;
+
+    margin-top    : 7.5%;
+    padding       : 1%;
+}
+
+.centered h1 {
+    color : #9f090f;
+}
+
+.centered span.little- {
+    font-family : 'Roboto', sans-serif;
+    font-size   : 20px;
+}
+
+hr.sep-2 {
+    width  : 10%;
+    border : 0.5px solid #999;
+}
+
+.top, .bottom, .center {
+    margin : 35px 0;
+}
+
+#pseudo, #email, #passwd, #rppasswd, #lname, #name, #country, #ville {
+    color            : #6e0f0f;
+    background-color : transparent;
+    margin           : 0 8px;
+
+    border           : none;
+    border-bottom    : 2px solid #6e0f0f;
+}
+
+#submit {
+    color            : whitesmoke;
+    border           : 1px solid transparent;
+    background-color : #b31217;
+    padding          : 1%;
+    border-radius    : 5px;
+}
+
+#submit:hover {
+    background-color : whitesmoke;
+    color            : #b31217;
+    border           : 1px solid #b31217;
+}
+
+p.connect {
+    color       : #b31217;
+    font-family : 'Roboto', sans-serif;
+}
+
+section#soon {
+    background-color : #9f090f;
+    color            : white;
+
+    margin-top       : 5%;
+    padding          : 15%;
+
+    text-align       : center;
+    text-transform   : uppercase;
+    font-family      : 'Roboto', sans-serif;
+    font-size        : 30px;
+}
