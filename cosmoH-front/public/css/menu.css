@@ -1,0 +1,101 @@
+nav ul#menu {
+    list-style-type : none;
+    margin          : 0;
+    padding         : 0;
+
+}
+
+nav ul#menu li {
+    display : inline-block;
+    margin  : 0 15px;
+
+}
+
+nav ul#menu li a {
+    position        : relative;
+    display         : inline-block;
+    color           : white;
+
+    transition      : all 0.2s linear;
+    padding-bottom  : 7px;
+
+    font-family     : 'Roboto', sans-serif;
+    text-transform  : uppercase;
+    text-decoration : none;
+
+}
+
+nav ul#menu li a#clients {
+    color            : #9f090f;
+    background-color : white;
+
+    padding          : 10px;
+    margin-left      : 5px;
+
+    border-radius    : 10px;
+    border           : 1px solid transparent;
+
+}
+
+nav ul#menu li a#clients:hover {
+    color            : white;
+    background-color : transparent;
+    border           : 1px solid white;
+
+}
+
+nav ul#menu li a.link:hover, .drop a:hover {
+    color      : white;
+    transition : .3s;
+
+}
+
+nav ul#menu li a.link::after, .drop a::after {
+    content       : '';
+    position      : absolute;
+    width         : 100%;
+    left          : 0;
+    right         : 0;
+
+    transform     : scaleX(0);
+    transition    : all 0.3s linear;
+
+    bottom        : 0;
+    border-bottom : 1px solid white;
+
+}
+
+nav ul#menu li a.link:hover:after, .drop a:hover::after {
+    transform : scaleX(1.1);
+
+}
+
+nav ul#menu li.dropdown {
+    display : inline-block;
+
+}
+
+.drop {
+    position: absolute;
+    display: none;
+    width: 135px;
+    background-color: #c40018;
+
+    text-align: center;
+    z-index: 1;
+
+}
+
+div.drop a {
+    display         : block;
+    color           : black;
+    padding         : 15px 10px;
+    text-decoration : none;
+    text-align      : center;
+
+}
+
+.dropdown:hover .drop {
+    display : block;
+}
+

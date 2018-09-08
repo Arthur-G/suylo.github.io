@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CosmoHeberg - Connexion à l'Espace Clients</title>
+
+        <!--  OPEN GRAPH -->
+        <meta property="og:title" content="CosmoHeberg - Connexion à l'Espace Clients">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Site web d'hébergement de serveurs Teamspeak 3, Minecraft, CS:GO, GMod et bien plus encore !">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:url" content="https://www.cosmoheberg.fr/">
+        <meta property="og:site_name" content="www.cosmoheberg.fr">
+        <meta property="og:image" content="https://cosmoheberg.fr/public/img/favicon.png">
+        <meta property="og:image:secure_url" content="https://cosmoheberg.fr/public/img/favicon.png">
+
+        <meta name="theme-color" content="#e52d27">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#e52d27">
+        <meta name="msapplication-navbutton-color" content="#e52d27">
+
+        <!-- CSS -->
+        <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../public/css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../public/css/responsive.css">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+              crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+
+        <header class="r-top">
+            <div class="logo">
+                <a href="../index.html" class="r-rotate">
+                    <img src="../public/img/favicon.png" class="rotate" width="75" alt="logo">
+                </a>
+                <h1>Cosmo Heberg</h1>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="link">Nos Offres</a>
+                        <div class="drop">
+                            <a href="nos-offres/minecraft.html">Minecraft</a>
+                            <a href="nos-offres/csgo.html">CS:GO</a>
+                            <a href="soon.html">TeamSpeak</a>
+                            <a href="nos-offres/gmod.html">GMod</a>
+                        </div>
+                    </li>
+                    <span class="none">•</span>
+                    <li>
+                        <a href="support" class="link">Support</a>
+                    </li>
+                    <span class="none">•</span>
+                    <li>
+                        <a href="../index.html" id="clients">
+                            <i class="fas fa-home"></i>
+                             Accueil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content-of-page" class="text-center">
+            <p class="attention">
+                Avant de continuer, veuillez vous connecter ou bien vous enregistrer !
+            </p>
+            <div class="container r-right">
+                <div class="logo centered">
+                    <img src="../public/img/favicon2.png" alt="Logo" class="rotate" width="65">
+                    <h1><span class="little-"> Espace client</span></h1>
+                </div>
+
+                <hr class="sep-2">
+                <form action="login.html" class="flex">
+                    <div class="top">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="center">
+                        <input type="password" name="passwd" id="passwd" placeholder="Mot de passe">
+                    </div>
+                    <div class="bottom">
+                        <input type="submit" id="submit" value="Se connecter">
+                    </div>
+                </form>
+                <hr class="sep-2">
+                <div class="not-connected">
+                    <p>
+                        Vous n'êtes pas inscrit ? <a href="register.html" style="color: #e52d27;">Inscrivez-vous</a> !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="../public/js/particles.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="../public/js/sr.js"></script>
+    </body>
+</html>

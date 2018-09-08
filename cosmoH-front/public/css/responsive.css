@@ -1,0 +1,141 @@
+@media all and (max-width: 930px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 25%;
+    }
+    section.titre, #content-of-page, #nos-offres{
+        margin-top: 15%;
+    }
+    .top, .center, .bottom{
+        margin: 15px 0;
+    }
+    #pseudo, #email, #passwd, #rppasswd, #lname, #name, #country, #ville {
+        margin: 10px 0;
+    }
+    .container{
+        margin: 10% auto;
+    }
+}
+
+@media all and (max-width: 800px){
+    section#utils{
+        display: flex;
+        flex-direction : row;
+        flex-wrap: wrap;
+        align-items : center;
+        margin-top: 7.5%;
+    }
+    .utils-right{
+        margin-top: 5%;
+    }
+    #nos-offres{
+        margin-bottom: 7.5%;
+    }
+}
+
+@media all and (max-width: 730px){
+    section#infos{
+        display: flex;
+        flex-direction: column;
+        justify-content : center;
+        align-items: center;
+    }
+}
+@media all and (max-width: 650px){
+    section.titre, #content-of-page, #nos-offres{
+        margin-top: 22%;
+    }
+}
+
+@media all and (max-width: 600px){
+    nav ul#menu li {
+        display : block;
+        margin  : 15px 0;
+        text-align: center;
+    }
+    header{
+        height: 50%;
+        position : relative;
+    }
+    span.none{
+        display : none;
+
+    }
+    section.titre, #content-of-page, #nos-offres{
+        margin-top: 0;
+    }
+    nav ul#menu li.dropdown {
+        display: block;
+    }
+    section#utils {
+        display        : flex;
+        flex-direction : column-reverse;
+        align-items    : center;
+        margin-top     : 5%;
+        padding        : 7.5% 0;
+    }
+    section.items-list {
+        display         : flex;
+        flex-direction  : column;
+        justify-content : center;
+        align-items     : center;
+    }
+    .utils-left, .utils-right{
+        margin: 7% 0;
+    }
+
+}
+@media all and (max-width: 570px){
+    section#infos{
+        width: auto;
+
+    }
+    section#infos .avantages p {
+        width: auto;
+    }
+    section#infos .avantages{
+        width: auto;
+    }
+    ._{
+        display: none;
+    }
+    .container {
+        max-width     : 90%;
+        border-radius : 5px;
+
+        margin-top    : 7.5%;
+        padding       : 1%;
+    }
+    p.attention{
+        display: none;
+    }
+
+}
+    @media all and (max-width: 450px){
+    .footer-right{
+        display: none;
+    }
+    .footer-left{
+        margin-bottom: 2%;
+    }
+    footer{
+        justify-content :  center;
+    }
+    section.items-list .card-large, .card-small, .card-medium {
+        margin             : 10% 0;
+    }
+}
+@media all and (max-width: 330px){
+    .logo h1{
+        font-size: 30px;
+    }
+    section.titre p{
+        width: 90%;
+        text-align: justify;
+        margin: auto;
+    }
+    .utils-left, .utils-right{
+        margin: 10% 0;
+    }
+}
