@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CosmoHeberg - Hébergeur de CS:GO, Minecraft et bien plus !</title>
+
+        <!--  OPEN GRAPH -->
+        <meta property="og:title" content="CosmoHeberg - Hébérgeur de serveurs Minecraft, CS et bien plus !">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Site web d'hébergement de serveurs Teamspeak 3, Minecraft, CS:GO, GMod et bien plus encore !">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:url" content="https://www.cosmo-heberg.fr/">
+        <meta property="og:site_name" content="www.cosmo-heberg.fr">
+        <meta property="og:image" content="https://cosmo-heberg.fr/public/img/favicon.png">
+        <meta property="og:image:secure_url" content="https://cosmo-heberg.fr/public/img/favicon.png">
+
+        <meta name="theme-color" content="#e52d27">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#e52d27">
+        <meta name="msapplication-navbutton-color" content="#e52d27">
+
+        <!-- CSS -->
+        <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="public/css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+              crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <header class="r-top">
+            <div class="logo">
+                <a href="index.html" class="r-rotate">
+                    <img src="public/img/favicon.png" class="rotate" width="75" alt="logo">
+                </a>
+                <h1>Cosmo Heberg</h1>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="link">Nos Offres</a>
+                        <div class="drop">
+                            <a href="pages/nos-offres/minecraft.html">Minecraft</a>
+                            <a href="pages/nos-offres/csgo.html">CS:GO</a>
+                            <a href="pages/soon.html">TeamSpeak</a>
+                            <a href="pages/nos-offres/gmod.html">GMod</a>
+                        </div>
+                    </li>
+                    <span class="none">•</span>
+                    <li class="circle">
+                        <a href="https://discord.gg/Gm4er9a" target="_blank" class="link">Support</a>
+                    </li>
+                    <span class="none">•</span>
+
+                    <li class="circle">
+                        <a href="pages/login.html" id="clients">
+                            <i class="fas fa-user"></i>
+                            &nbsp;Espace Clients
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="boutique">
+            <h2><i class="fas fa-shopping-cart"></i> Mon achat</h2>
+            <div class="table-months">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <td class="tb">Produit</td>
+                            <td class="tb">Durée</td>
+                            <td class="tb">Prix</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>XXXXXXXX</td>
+                        <td>3 Mois</td>
+                        <td>49.99 €</td>
+                    </tr>
+                    <tr>
+                        <td>Code Promo : </td>
+                        <td>IBRATV</td>
+                        <td>-10%</td>
+                    </tr>
+                </table>
+
+                <table class="months">
+                    <thead>
+                        <tr>
+                            <td class="tb">Sélection</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="months">1 mois</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="months">2 mois</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="months" class="activated">3 mois</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="no-bottom">
+                                <a href="months">6 mois</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span class="code-promo">
+                Code promo
+                <label>
+                    <input type="text" name="code" id="code" placeholder="Ex: IbraTV">
+                </label>
+                <a href="ok" id="add">
+                    Ajouter
+                </a>
+            </span>
+            <h3 class="total">
+                Le Total de la commande à payer: <strong>44,99 €</strong>
+            </h3>
+            <div id="paiement">
+                <p>
+                    Méthode de paiements disponible :
+                </p>
+                <a href="#paiement">
+                    <img src="https://s1.qwant.com/thumbr/0x380/3/b/13623aec6b2f0362da29299233d5017253b283b271f004aad308f533dd0eac/paypal-app-logo.png?u=http%3A%2F%2Fimg.talkandroid.com%2Fuploads%2F2016%2F02%2Fpaypal-app-logo.png&q=0&b=1&p=0&a=1"
+                         alt="lol" width="50">
+                </a>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="public/js/loader.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="public/js/sr.js"></script>
+</body>
+</html>

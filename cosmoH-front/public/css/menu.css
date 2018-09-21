@@ -44,13 +44,13 @@ nav ul#menu li a#clients:hover {
 
 }
 
-nav ul#menu li a.link:hover, .drop a:hover {
+nav ul#menu li a.link:hover, .drop a:hover, #subbmit:hover {
     color      : white;
     transition : .3s;
 
 }
 
-nav ul#menu li a.link::after, .drop a::after {
+nav ul#menu li a.link::after, .drop a::after, #subbmit:after {
     content       : '';
     position      : absolute;
     width         : 100%;
@@ -65,7 +65,7 @@ nav ul#menu li a.link::after, .drop a::after {
 
 }
 
-nav ul#menu li a.link:hover:after, .drop a:hover::after {
+nav ul#menu li a.link:hover:after, .drop a:hover::after, #subbmit:hover::after {
     transform : scaleX(1.1);
 
 }
@@ -80,9 +80,10 @@ nav ul#menu li.dropdown {
     display: none;
     width: 135px;
     background-color: #c40018;
-
     text-align: center;
+
     z-index: 1;
+
 
 }
 
