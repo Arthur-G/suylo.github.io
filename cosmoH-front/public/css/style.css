@@ -552,7 +552,7 @@ section#soon {
 }
 .tb{
     background-color : rgba(0,0,0,0.1);
-    padding: 6%;
+    padding: 8%;
 
     text-transform: uppercase;
     border-bottom: none;
@@ -641,7 +641,7 @@ a#next:hover{
     border-radius: 5px;
 }
 table.months{
-    width: 15%;
+    width: auto;
     margin: 1% 0 2% 0;
     overflow: hidden;
 
@@ -654,7 +654,7 @@ table.months td{
 }
 tbody tr td a{
     color: gray;
-    padding: 5% 51px;
+    padding: 5px 25px;
 }
 tbody tr td a:hover{
     color: #999999;
@@ -673,4 +673,35 @@ tbody tr td a:hover{
     background-color: rgba(161,162,161,0.11);
     border-right: 3px solid rgba(161,162,161,0.11);
     border-left: 3px solid rgba(161,162,161,0.11);
+}
+br.nonne{
+    display: none;
+}
+
+
+@media all and (max-width: 580px){
+    br.nonne{
+        display : block;
+    }
+    .months{
+        margin-bottom: 5%;
+    }
+    #table{
+        margin-bottom : 10%;
+    }
+
+}
+@media all and (max-width: 930px) {
+    #boutique{
+        margin-top: 25%;
+    }
+    .table-months{
+        display : flex;
+        flex-direction: column;
+        align-items : center;
+    }
+    #table{
+        width: auto;
+    }
+
 }
