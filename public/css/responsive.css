@@ -1,20 +1,20 @@
 @media all and (max-width: 1230px){
-    .aa_none{
+    .none{
         display : none;
     }
 }
 
 @media all and (max-width: 850px){
-    .aa_list-services{
+    .list-services{
         flex-direction : column;
     }
-    .aa_services{
+    .services{
         margin: 5% 15%;
     }
-    section.aa_about-me, section.aa_competences, section.aa_need-help, section.aa_contact{
+    section.about-me, section.competences, section.need-help, section.contact{
         width: auto;
     }
-    header .aa_social-media {
+    header .social-media {
         position       : absolute;
         z-index        : 10;
         right          : 2%;
@@ -24,20 +24,20 @@
     }
 }
 @media all and (max-width: 700px){
-    .aa_portfolio-content{
+    .portfolio-content{
         flex-direction: column;
     }
-    .aa_portfolio-list{
+    .portfolio-list{
         margin: 5% 15%;
     }
-    .aa_portfolio-img{
+    .portfolio-img{
         width: 100%;
         height: auto;
     }
 
 }
 @media all and (max-width: 650px){
-    header .aa_social-media{
+    header .social-media{
         position       : initial;
         z-index        : 10;
         display        : flex;
@@ -50,7 +50,7 @@
         display : flex;
         flex-direction: column;
     }
-    .aa_logo{
+    .logo{
         text-align: center;
         margin-top: 2.5%;
     }
@@ -58,7 +58,7 @@
         margin: 0;
         padding: 0;
     }
-    .aa_contact p, p.resp, .aa_about-me p{
+    .contact p, p.resp, .about-me p{
         max-width : 87%;
         text-align: justify;
         margin: auto;

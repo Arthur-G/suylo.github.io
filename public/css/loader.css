@@ -1,4 +1,4 @@
-#aa_loader-wrapper {
+#loader-wrapper {
     position : fixed;
     top      : 0;
     left     : 0;
@@ -7,7 +7,7 @@
     z-index  : 1000;
 }
 
-#aa_loader {
+#loader {
     display           : block;
     position          : relative;
     left              : 50%;
@@ -25,7 +25,7 @@
     z-index           : 1001;
 }
 
-#aa_loader:before {
+#loader:before {
     content           : "";
     position          : absolute;
     top               : 5px;
@@ -41,7 +41,7 @@
     animation         : spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
-#aa_loader:after {
+#loader:after {
     content           : "";
 
     position          : absolute;
@@ -83,7 +83,7 @@
     }
 }
 
-#aa_loader-wrapper .aa_loader-section {
+#loader-wrapper .loader-section {
     position          : fixed;
     top               : 0;
     width             : 51%;
@@ -94,16 +94,16 @@
     transform         : translateX(0); /* Firefox 16+, IE 10+, Opera */
 }
 
-#aa_loader-wrapper .aa_loader-section.section-left {
+#loader-wrapper .loader-section.section-left {
     left : 0;
 }
 
-#aa_loader-wrapper .aa_loader-section.section-right {
+#loader-wrapper .loader-section.section-right {
     right : 0;
 }
 
 /* Loaded */
-.aa_loaded #aa_loader-wrapper .aa_loader-section.section-left {
+.loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform  : translateX(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform      : translateX(-100%); /* IE 9 */
     transform          : translateX(-100%); /* Firefox 16+, IE 10+, Opera */
@@ -112,7 +112,7 @@
     transition         : all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
-.aa_loaded #aa_loader-wrapper .aa_loader-section.section-right {
+.loaded #loader-wrapper .loader-section.section-right {
     -webkit-transform  : translateX(100%); /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform      : translateX(100%); /* IE 9 */
     transform          : translateX(100%); /* Firefox 16+, IE 10+, Opera */
@@ -121,13 +121,13 @@
     transition         : all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
-.aa_loaded #aa_loader {
+.loaded #loader {
     opacity            : 0;
     -webkit-transition : all 0.3s ease-out;
     transition         : all 0.3s ease-out;
 }
 
-.aa_loaded #aa_loader-wrapper {
+.loaded #loader-wrapper {
     visibility         : hidden;
 
     -webkit-transform  : translateY(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
@@ -139,7 +139,7 @@
 }
 
 /* JavaScript Turned Off */
-.no-js #aa_loader-wrapper {
+.no-js #loader-wrapper {
     display : none;
 }
 .no-js h1 {
