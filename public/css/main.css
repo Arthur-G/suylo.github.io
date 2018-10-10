@@ -478,3 +478,8 @@ footer {
 p{
     font-family: 'Montserrat', sans-serif;
 }
+
+.top{
+    margin-top: 5%;
+    display : none;
+}
