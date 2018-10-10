@@ -493,3 +493,215 @@ section#soon {
     font-family      : 'Roboto', sans-serif;
     font-size        : 30px;
 }
+
+/*
+    PANEL
+ */
+
+
+
+.drop-2{
+    width: 160px;
+}
+.bvn{
+    text-transform: none;
+}
+.border-bottom{
+    padding-bottom: 6px;
+    border-bottom: 2px solid white;
+}
+
+@media all and (max-width: 930px) {
+    .drop, .drop-2{
+        text-align: left;
+    }
+    .panel-{
+        margin-left : 10px;
+    }
+}
+
+#subbmit {
+    background-color : #c40018;
+    color            : white;
+    border           : none;
+    font-size        : 18px;
+    cursor           : pointer;
+    padding-top      : 10px;
+    text-transform   : uppercase;
+    border-bottom    : 1px solid transparent;
+}
+
+#subbmit:hover {
+    border-bottom : 1px solid white;
+}
+
+#boutique{
+    max-width: 80%;
+    margin: 10% auto;
+    text-align : center;
+    border: 1px solid transparent;
+    padding : 1%;
+
+    box-shadow         : 0 0 10px 0 rgba(0, 0, 0, .2);
+
+}
+#table{
+    width: 50%;
+    margin: 0 5% 2% 0;
+
+}
+.tb{
+    background-color : rgba(0,0,0,0.1);
+    padding: 8%;
+
+    text-transform: uppercase;
+    border-bottom: none;
+
+
+}
+#table thead{
+    margin-bottom : 1%;
+
+}
+
+#table td{
+    padding: 2%;
+    border-bottom: 1px solid #999999;
+}
+hr.sep-pay{
+    width: 40%;
+    color: rgba(0,0,0,0.5);
+}
+h3.total{
+    margin-top: 2%;
+}
+div#paiement{
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+}
+.code-promo{
+    margin-top: -5%;
+}
+
+#add{
+    padding: 0.5%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+a#add{
+    color: gray;
+    text-decoration: none;
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -ms-transition     : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+}
+a#add:hover{
+    color: white;
+    background : gray;
+    border : 1px solid transparent;
+    -webkit-transition : all 0.3s;
+    -moz-transition    : all 0.3s;
+    -ms-transition     : all 0.3s;
+    -o-transition      : all 0.3s;
+    transition         : all 0.3s;
+}
+#code{
+    width: 100px;
+    padding: 4%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.table-months{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items : center;
+}
+
+h3.total{
+    margin: 5% 0;
+}
+a#next{
+    padding: 1%;
+    color: gray;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 2px;
+}
+a#next:hover{
+    color: gray;
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid transparent;
+    text-decoration: none;
+    border-radius: 5px;
+}
+table.months{
+    width: auto;
+    margin: 1% 0 2% 0;
+    overflow: hidden;
+
+}
+table.months td{
+    overflow: hidden;
+}
+.no-bottom{
+    border-bottom: none;
+}
+tbody tr td a{
+    color: gray;
+    padding: 5px 25px;
+}
+tbody tr td a:hover{
+    color: #999999;
+    text-decoration: none;
+    background-color: rgba(161,162,161,0.11);
+    border-right: 3px solid rgba(161,162,161,0.11);
+    border-left: 3px solid rgba(161,162,161,0.11);
+
+}
+.table-months{
+    margin-top: 4%;
+}
+.activated{
+    color: #999999;
+    text-decoration: none;
+    background-color: rgba(161,162,161,0.11);
+    border-right: 3px solid rgba(161,162,161,0.11);
+    border-left: 3px solid rgba(161,162,161,0.11);
+}
+br.nonne{
+    display: none;
+}
+
+
+@media all and (max-width: 580px){
+    br.nonne{
+        display : block;
+    }
+    .months{
+        margin-bottom: 5%;
+    }
+    #table{
+        margin-bottom : 10%;
+    }
+
+}
+@media all and (max-width: 930px) {
+    #boutique{
+        margin-top: 25%;
+    }
+    .table-months{
+        display : flex;
+        flex-direction: column;
+        align-items : center;
+    }
+    #table{
+        width: auto;
+    }
+
+}

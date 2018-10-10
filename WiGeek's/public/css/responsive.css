@@ -1,0 +1,9 @@
+@media all and (max-width: 670px){
+    nav ul#menu li{
+        display : block;
+        margin: 25px 0;
+    }
+    nav ul#menu li a{
+        padding: 5px 15px;
+    }
+}
